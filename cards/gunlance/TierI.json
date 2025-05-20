@@ -1,0 +1,571 @@
+[
+  {
+    "name": "Affondo",
+    "symbolsLeft": [
+      {
+        "place": 1,
+        "tipo": "giallo",
+        "isJolly": false
+      },
+      {
+        "place": 2,
+        "tipo": "rosso",
+        "isJolly": false
+      }
+    ],
+    "symbolsRight": [
+      {
+        "place": 1,
+        "tipo": "giallo",
+        "isJolly": false
+      },
+      {
+        "place": 3,
+        "tipo": "blu",
+        "isJolly": false
+      }
+    ],
+    "effect": {
+      "condizione": {
+        "condizione": {
+          "condizione": "0",
+          "enumKey": "EMPTY",
+          "enumOrdinal": 4
+        }
+      },
+      "effectType": {
+        "area": {
+          "enumKey": "NO_AREA",
+          "enumOrdinal": 3
+        },
+        "target": {
+          "target": "SELF",
+          "enumKey": "SELF",
+          "enumOrdinal": 2
+        },
+        "effetto": "Se la prossima carta che giochi e' uno 'Sparo', puoi colpire una parte qualsiasi",
+        "type": "EffettoLibero"
+      }
+    },
+    "damage": 1
+  },
+  {
+    "name": "Slancio Esplosivo",
+    "symbolsLeft": [
+      {
+        "place": 1,
+        "tipo": "giallo",
+        "isJolly": false
+      },
+      {
+        "place": 2,
+        "tipo": "rosso",
+        "isJolly": false
+      }
+    ],
+    "symbolsRight": [
+      {
+        "place": 0,
+        "tipo": "vuoto",
+        "isJolly": false
+      }
+    ],
+    "effect": [
+      {
+        "condizione": {
+          "condizione": {
+            "condizione": "0",
+            "enumKey": "EMPTY",
+            "enumOrdinal": 4
+          }
+        },
+        "effectType": {
+          "area": {
+            "enumKey": "NO_AREA",
+            "enumOrdinal": 3
+          },
+          "target": {
+            "target": "SELF",
+            "enumKey": "SELF",
+            "enumOrdinal": 2
+          },
+          "type": "EffettoSpostamentoLibero"
+        }
+      },
+      {
+        "condizione": {
+          "condizione": {
+            "condizione": "!",
+            "enumKey": "ATTUALE",
+            "enumOrdinal": 1
+          },
+          "coppia1": {
+            "place": 1,
+            "tipo": "giallo",
+            "isJolly": false
+          },
+          "coppia2": {
+            "place": 2,
+            "tipo": "rosso",
+            "isJolly": false
+          },
+          "coppiaSingola": false
+        },
+        "effectType": {
+          "area": {
+            "enumKey": "NO_AREA",
+            "enumOrdinal": 3
+          },
+          "target": {
+            "target": "SELF",
+            "enumKey": "SELF",
+            "enumOrdinal": 2
+          },
+          "damage": 3,
+          "type": "EffettoDanno"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Ricarica Rapida",
+    "symbolsLeft": [
+      {
+        "place": 0,
+        "tipo": "bianco",
+        "isJolly": true
+      }
+    ],
+    "symbolsRight": [
+      {
+        "place": 1,
+        "tipo": "giallo",
+        "isJolly": false
+      },
+      {
+        "place": 3,
+        "tipo": "blu",
+        "isJolly": false
+      }
+    ],
+    "effect": {
+      "condizione": {
+        "condizione": {
+          "condizione": "0",
+          "enumKey": "EMPTY",
+          "enumOrdinal": 4
+        }
+      },
+      "effectType": {
+        "area": {
+          "enumKey": "NO_AREA",
+          "enumOrdinal": 3
+        },
+        "target": {
+          "target": "SELF",
+          "enumKey": "SELF",
+          "enumOrdinal": 2
+        },
+        "carta": "Sparo",
+        "type": "EffettoRiprendi"
+      }
+    }
+  },
+  {
+    "name": "Copertura",
+    "symbolsLeft": [
+      {
+        "place": 1,
+        "tipo": "giallo",
+        "isJolly": false
+      },
+      {
+        "place": 3,
+        "tipo": "blu",
+        "isJolly": false
+      }
+    ],
+    "symbolsRight": [
+      {
+        "place": 1,
+        "tipo": "giallo",
+        "isJolly": false
+      },
+      {
+        "place": 2,
+        "tipo": "rosso",
+        "isJolly": false
+      }
+    ],
+    "effect": [
+      {
+        "condizione": {
+          "condizione": {
+            "condizione": "0",
+            "enumKey": "EMPTY",
+            "enumOrdinal": 4
+          }
+        },
+        "effectType": {
+          "area": {
+            "enumKey": "NO_AREA",
+            "enumOrdinal": 3
+          },
+          "target": {
+            "target": "SELF",
+            "enumKey": "SELF",
+            "enumOrdinal": 2
+          },
+          "type": "EffettoParata"
+        }
+      },
+      {
+        "condizione": {
+          "condizione": {
+            "condizione": "!",
+            "enumKey": "ATTUALE",
+            "enumOrdinal": 1
+          },
+          "coppia1": {
+            "place": 1,
+            "tipo": "giallo",
+            "isJolly": false
+          },
+          "coppiaSingola": true
+        },
+        "effectType": {
+          "area": {
+            "enumKey": "ZONA",
+            "enumOrdinal": 1
+          },
+          "target": {
+            "target": "SINGOLO",
+            "enumKey": "SINGLE_TARGET",
+            "enumOrdinal": 0
+          },
+          "caselle": 2,
+          "direzione": null,
+          "type": "EffettoMovimento"
+        }
+      },
+      {
+        "condizione": {
+          "condizione": {
+            "condizione": "!",
+            "enumKey": "ATTUALE",
+            "enumOrdinal": 1
+          },
+          "coppia1": {
+            "place": 3,
+            "tipo": "blu",
+            "isJolly": false
+          },
+          "coppiaSingola": true
+        },
+        "effectType": {
+          "area": {
+            "enumKey": "ZONA",
+            "enumOrdinal": 1
+          },
+          "target": {
+            "target": "SINGOLO",
+            "enumKey": "SINGLE_TARGET",
+            "enumOrdinal": 0
+          },
+          "type": "EffettoParata"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Schianto",
+    "symbolsLeft": [
+      {
+        "place": 2,
+        "tipo": "rosso",
+        "isJolly": false
+      },
+      {
+        "place": 3,
+        "tipo": "blu",
+        "isJolly": false
+      }
+    ],
+    "symbolsRight": [
+      {
+        "place": 1,
+        "tipo": "giallo",
+        "isJolly": false
+      },
+      {
+        "place": 2,
+        "tipo": "rosso",
+        "isJolly": false
+      }
+    ],
+    "effect": [
+      {
+        "condizione": {
+          "condizione": {
+            "condizione": "!",
+            "enumKey": "ATTUALE",
+            "enumOrdinal": 1
+          },
+          "coppia1": {
+            "place": 2,
+            "tipo": "rosso",
+            "isJolly": false
+          },
+          "coppiaSingola": true
+        },
+        "effectType": {
+          "area": {
+            "enumKey": "NO_AREA",
+            "enumOrdinal": 3
+          },
+          "target": {
+            "target": "SELF",
+            "enumKey": "SELF",
+            "enumOrdinal": 2
+          },
+          "carta": "Sparo",
+          "type": "EffettoGiocaImmediatamente"
+        }
+      },
+      {
+        "condizione": {
+          "condizione": {
+            "condizione": "!",
+            "enumKey": "ATTUALE",
+            "enumOrdinal": 1
+          },
+          "coppia1": {
+            "place": 3,
+            "tipo": "blu",
+            "isJolly": false
+          },
+          "coppiaSingola": true
+        },
+        "effectType": {
+          "area": {
+            "enumKey": "NO_AREA",
+            "enumOrdinal": 3
+          },
+          "target": {
+            "target": "SELF",
+            "enumKey": "SELF",
+            "enumOrdinal": 2
+          },
+          "carta": "Sparo",
+          "type": "EffettoGiocaImmediatamente"
+        }
+      }
+    ],
+    "damage": 2
+  },
+  {
+    "name": "Passo",
+    "symbolsLeft": [
+      {
+        "place": 1,
+        "tipo": "giallo",
+        "isJolly": false
+      },
+      {
+        "place": 3,
+        "tipo": "blu",
+        "isJolly": false
+      }
+    ],
+    "symbolsRight": [
+      {
+        "place": 3,
+        "tipo": "blu",
+        "isJolly": false
+      },
+      {
+        "place": 4,
+        "tipo": "verde",
+        "isJolly": false
+      }
+    ],
+    "effect": [
+      {
+        "condizione": {
+          "condizione": {
+            "condizione": "0",
+            "enumKey": "EMPTY",
+            "enumOrdinal": 4
+          }
+        },
+        "effectType": {
+          "area": {
+            "enumKey": "NO_AREA",
+            "enumOrdinal": 3
+          },
+          "target": {
+            "target": "SELF",
+            "enumKey": "SELF",
+            "enumOrdinal": 2
+          },
+          "caselle": 1,
+          "direzione": null,
+          "type": "EffettoMovimento"
+        }
+      },
+      {
+        "condizione": {
+          "condizione": {
+            "condizione": "!",
+            "enumKey": "ATTUALE",
+            "enumOrdinal": 1
+          },
+          "coppia1": {
+            "place": 1,
+            "tipo": "giallo",
+            "isJolly": false
+          },
+          "coppiaSingola": true
+        },
+        "effectType": {
+          "area": {
+            "enumKey": "NO_AREA",
+            "enumOrdinal": 3
+          },
+          "target": {
+            "target": "SELF",
+            "enumKey": "SELF",
+            "enumOrdinal": 2
+          },
+          "caselle": 2,
+          "direzione": null,
+          "type": "EffettoMovimento"
+        }
+      },
+      {
+        "condizione": {
+          "condizione": {
+            "condizione": "!",
+            "enumKey": "ATTUALE",
+            "enumOrdinal": 1
+          },
+          "coppia1": {
+            "place": 3,
+            "tipo": "blu",
+            "isJolly": false
+          },
+          "coppiaSingola": true
+        },
+        "effectType": {
+          "area": {
+            "enumKey": "NO_AREA",
+            "enumOrdinal": 3
+          },
+          "target": {
+            "target": "SELF",
+            "enumKey": "SELF",
+            "enumOrdinal": 2
+          },
+          "recupero": 1,
+          "type": "EffettoRecupero"
+        }
+      }
+    ]
+  },
+  {
+    "name": "Montante",
+    "symbolsLeft": [
+      {
+        "place": 2,
+        "tipo": "rosso",
+        "isJolly": false
+      }
+    ],
+    "symbolsRight": [
+      {
+        "place": 2,
+        "tipo": "rosso",
+        "isJolly": false
+      },
+      {
+        "place": 3,
+        "tipo": "blu",
+        "isJolly": false
+      }
+    ],
+    "effect": {
+      "condizione": {
+        "condizione": {
+          "condizione": "0",
+          "enumKey": "EMPTY",
+          "enumOrdinal": 4
+        }
+      },
+      "effectType": {
+        "area": {
+          "enumKey": "NO_AREA",
+          "enumOrdinal": 3
+        },
+        "target": {
+          "target": "SELF",
+          "enumKey": "SELF",
+          "enumOrdinal": 2
+        },
+        "stun": 1,
+        "type": "EffettoStun"
+      }
+    },
+    "damage": 1
+  },
+  {
+    "name": "Fendente Laterale",
+    "symbolsLeft": [
+      {
+        "place": 1,
+        "tipo": "giallo",
+        "isJolly": false
+      }
+    ],
+    "symbolsRight": [
+      {
+        "place": 2,
+        "tipo": "rosso",
+        "isJolly": false
+      },
+      {
+        "place": 3,
+        "tipo": "blu",
+        "isJolly": false
+      }
+    ],
+    "effect": {
+      "condizione": {
+        "condizione": {
+          "condizione": "2",
+          "enumKey": "DOPPIO",
+          "enumOrdinal": 3
+        },
+        "coppia1": {
+          "place": 2,
+          "tipo": "rosso",
+          "isJolly": false
+        },
+        "coppiaSingola": true
+      },
+      "effectType": {
+        "area": {
+          "enumKey": "NO_AREA",
+          "enumOrdinal": 3
+        },
+        "target": {
+          "target": "SELF",
+          "enumKey": "SELF",
+          "enumOrdinal": 2
+        },
+        "damage": 1,
+        "type": "EffettoDannoParte"
+      }
+    },
+    "damage": 1
+  }
+]
