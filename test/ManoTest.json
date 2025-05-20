@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Pozione",
+    "symbolsLeft": [
+      {
+        "place": 4,
+        "tipo": "verde",
+        "isJolly": false
+      }
+    ],
+    "symbolsRight": [
+      {
+        "place": 0,
+        "tipo": "vuoto",
+        "isJolly": false
+      }
+    ],
+    "effect": {
+      "condizione": {
+        "condizione": {
+          "condizione": "0",
+          "enumKey": "EMPTY",
+          "enumOrdinal": 4
+        }
+      },
+      "effectType": {
+        "area": {
+          "enumKey": "NO_AREA",
+          "enumOrdinal": 3
+        },
+        "target": {
+          "target": "SELF",
+          "enumKey": "SELF",
+          "enumOrdinal": 2
+        },
+        "cura": 3,
+        "type": "EffettoCura"
+      }
+    }
+  },
+  {
+    "name": "Fendente Sfoderante",
+    "symbolsLeft": [
+      {
+        "place": 0,
+        "tipo": "bianco",
+        "isJolly": true
+      }
+    ],
+    "symbolsRight": [
+      {
+        "place": 1,
+        "tipo": "giallo",
+        "isJolly": false
+      },
+      {
+        "place": 2,
+        "tipo": "rosso",
+        "isJolly": false
+      }
+    ],
+    "effect": {
+      "condizione": {
+        "condizione": {
+          "condizione": "2",
+          "enumKey": "DOPPIO",
+          "enumOrdinal": 3
+        },
+        "coppia1": {
+          "place": 1,
+          "tipo": "giallo",
+          "isJolly": false
+        },
+        "coppiaSingola": true
+      },
+      "effectType": {
+        "area": {
+          "enumKey": "NO_AREA",
+          "enumOrdinal": 3
+        },
+        "target": {
+          "target": "SELF",
+          "enumKey": "SELF",
+          "enumOrdinal": 2
+        },
+        "effetto": "Rampino",
+        "type": "EffettoLibero"
+      }
+    },
+    "damage": 2
+  }
+]

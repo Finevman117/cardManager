@@ -1,0 +1,39 @@
+{
+  "name": "Pozione",
+  "symbolsLeft": [
+    {
+      "place": 4,
+      "tipo": "verde",
+      "isJolly": false
+    }
+  ],
+  "symbolsRight": [
+    {
+      "place": 0,
+      "tipo": "vuoto",
+      "isJolly": false
+    }
+  ],
+  "effect": {
+    "condizione": {
+      "condizione": {
+        "condizione": "0",
+        "enumKey": "EMPTY",
+        "enumOrdinal": 4
+      }
+    },
+    "effectType": {
+      "area": {
+        "enumKey": "NO_AREA",
+        "enumOrdinal": 3
+      },
+      "target": {
+        "target": "SELF",
+        "enumKey": "SELF",
+        "enumOrdinal": 2
+      },
+      "cura": 3,
+      "type": "EffettoCura"
+    }
+  }
+}
