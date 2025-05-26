@@ -1,0 +1,596 @@
+{
+  "weapon": "gunlance",
+  "tier": "BaseTier",
+  "cardNum": 5,
+  "cardNames": [
+    "Parata",
+    "Cannone Wyver",
+    "SparoA",
+    "SparoB",
+    "Ricarica"
+  ],
+  "damages": [
+    0,
+    2,
+    1,
+    1,
+    0
+  ],
+  "damageAverage": 0.8,
+  "comboSymbolReportLeft": {
+    "side": "left",
+    "symbolsArray": [
+      {
+        "cardName": "Parata",
+        "symbols": [
+          "bianco"
+        ]
+      },
+      {
+        "cardName": "Cannone Wyver",
+        "symbols": [
+          "rosso",
+          "blu"
+        ]
+      },
+      {
+        "cardName": "SparoA",
+        "symbols": [
+          "bianco"
+        ]
+      },
+      {
+        "cardName": "SparoB",
+        "symbols": [
+          "bianco"
+        ]
+      },
+      {
+        "cardName": "Ricarica",
+        "symbols": [
+          "bianco"
+        ]
+      }
+    ],
+    "symbolsCount": {
+      "yellowCount": 0,
+      "redCount": 1,
+      "blueCount": 1,
+      "greenCount": 0,
+      "whiteCount": 4,
+      "emptyCount": 0
+    }
+  },
+  "comboSymbolReportRight": {
+    "side": "right",
+    "symbolsArray": [
+      {
+        "cardName": "Parata",
+        "symbols": [
+          "giallo",
+          "rosso",
+          "verde"
+        ]
+      },
+      {
+        "cardName": "Cannone Wyver",
+        "symbols": [
+          "vuoto"
+        ]
+      },
+      {
+        "cardName": "SparoA",
+        "symbols": [
+          "giallo"
+        ]
+      },
+      {
+        "cardName": "SparoB",
+        "symbols": [
+          "giallo"
+        ]
+      },
+      {
+        "cardName": "Ricarica",
+        "symbols": [
+          "giallo",
+          "blu",
+          "verde"
+        ]
+      }
+    ],
+    "symbolsCount": {
+      "yellowCount": 4,
+      "redCount": 1,
+      "blueCount": 1,
+      "greenCount": 2,
+      "whiteCount": 0,
+      "emptyCount": 1
+    }
+  },
+  "tierMatches": {
+    "cardMatchesArray": [
+      {
+        "cardName": "Parata",
+        "symbolsRight": [
+          "giallo",
+          "rosso",
+          "verde"
+        ],
+        "matches": [
+          {
+            "matchedCardName": "Cannone Wyver",
+            "symbolsMatched": [
+              "rosso"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "SparoA",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "SparoB",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "Ricarica",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          },
+          {
+            "matchedCardName": "SparoA",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "SparoB",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "Ricarica",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          },
+          {
+            "matchedCardName": "SparoB",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "SparoA",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "Ricarica",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          },
+          {
+            "matchedCardName": "Ricarica",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "Cannone Wyver",
+                "symbolsMatched": [
+                  "blu"
+                ]
+              },
+              {
+                "matchedCardName": "SparoA",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "SparoB",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          }
+        ],
+        "comboPotentialAsFirst": 0.8333333333333333
+      },
+      {
+        "cardName": "Cannone Wyver",
+        "symbolsRight": [
+          "vuoto"
+        ],
+        "matches": [
+          {
+            "matchedCardName": "Parata",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "SparoA",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "SparoB",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "Ricarica",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          },
+          {
+            "matchedCardName": "SparoA",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "Parata",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "SparoB",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "Ricarica",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          },
+          {
+            "matchedCardName": "SparoB",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "Parata",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "SparoA",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "Ricarica",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          },
+          {
+            "matchedCardName": "Ricarica",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "Parata",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "SparoA",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "SparoB",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          }
+        ],
+        "comboPotentialAsFirst": 1
+      },
+      {
+        "cardName": "SparoA",
+        "symbolsRight": [
+          "giallo"
+        ],
+        "matches": [
+          {
+            "matchedCardName": "Parata",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "Cannone Wyver",
+                "symbolsMatched": [
+                  "rosso"
+                ]
+              },
+              {
+                "matchedCardName": "SparoB",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "Ricarica",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          },
+          {
+            "matchedCardName": "SparoB",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "Parata",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "Ricarica",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          },
+          {
+            "matchedCardName": "Ricarica",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "Parata",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "Cannone Wyver",
+                "symbolsMatched": [
+                  "blu"
+                ]
+              },
+              {
+                "matchedCardName": "SparoB",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          }
+        ],
+        "comboPotentialAsFirst": 0.5
+      },
+      {
+        "cardName": "SparoB",
+        "symbolsRight": [
+          "giallo"
+        ],
+        "matches": [
+          {
+            "matchedCardName": "Parata",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "Cannone Wyver",
+                "symbolsMatched": [
+                  "rosso"
+                ]
+              },
+              {
+                "matchedCardName": "SparoA",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "Ricarica",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          },
+          {
+            "matchedCardName": "SparoA",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "Parata",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "Ricarica",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          },
+          {
+            "matchedCardName": "Ricarica",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "Parata",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "Cannone Wyver",
+                "symbolsMatched": [
+                  "blu"
+                ]
+              },
+              {
+                "matchedCardName": "SparoA",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          }
+        ],
+        "comboPotentialAsFirst": 0.5
+      },
+      {
+        "cardName": "Ricarica",
+        "symbolsRight": [
+          "giallo",
+          "blu",
+          "verde"
+        ],
+        "matches": [
+          {
+            "matchedCardName": "Parata",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "Cannone Wyver",
+                "symbolsMatched": [
+                  "rosso"
+                ]
+              },
+              {
+                "matchedCardName": "SparoA",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "SparoB",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          },
+          {
+            "matchedCardName": "Cannone Wyver",
+            "symbolsMatched": [
+              "blu"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "Parata",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "SparoA",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "SparoB",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          },
+          {
+            "matchedCardName": "SparoA",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "Parata",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "SparoB",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          },
+          {
+            "matchedCardName": "SparoB",
+            "symbolsMatched": [
+              "bianco"
+            ],
+            "matches1depth": [
+              {
+                "matchedCardName": "Parata",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              },
+              {
+                "matchedCardName": "SparoA",
+                "symbolsMatched": [
+                  "bianco"
+                ]
+              }
+            ]
+          }
+        ],
+        "comboPotentialAsFirst": 0.8333333333333333
+      }
+    ]
+  }
+}

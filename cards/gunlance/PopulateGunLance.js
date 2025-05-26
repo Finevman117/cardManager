@@ -24,13 +24,21 @@ function populateBaseTier() {
     cannoneWyverTmp.setDamage(2)
     const cannoneWyver = cannoneWyverTmp
 
-    let sparoTmp = new PlayerCard("Sparo",
+    let sparoTmpA = new PlayerCard("SparoA",
         getStellaBianca(),
         new Array(ComboSymbol.ROMBO_GIALLO),
         new Effect(creaCondizioneSingola(ConditionType.ATTUALE, ComboSymbol.TRIANGOLO_ROSSO), 
             new Array(new EffettoDanno(1, Area.NO_AREA), new EffettoDannoParte(1, Area.NO_AREA))))
-    sparoTmp.setDamage(1)
-    const sparo = sparoTmp
+    sparoTmpA.setDamage(1)
+    const sparoA = sparoTmpA
+
+    let sparoTmpB = new PlayerCard("SparoB",
+        getStellaBianca(),
+        new Array(ComboSymbol.ROMBO_GIALLO),
+        new Effect(creaCondizioneSingola(ConditionType.ATTUALE, ComboSymbol.TRIANGOLO_ROSSO), 
+            new Array(new EffettoDanno(1, Area.NO_AREA), new EffettoDannoParte(1, Area.NO_AREA))))
+    sparoTmpB.setDamage(1)
+    const sparoB = sparoTmpB
 
     const ricarica = new PlayerCard("Ricarica",
         getStellaBianca(),
@@ -39,7 +47,7 @@ function populateBaseTier() {
             new Effect(creaCondizioneSingola(ConditionType.ATTUALE, ComboSymbol.TRIANGOLO_ROSSO), new EffettoRiprendi("Cannone Wyver")),
             new Effect(creaCondizioneSingola(ConditionType.ATTUALE, ComboSymbol.QUADRATO_BLU), new EffettoRiprendi("Sparo"))))
 
-    const baseTier = new Array(parata, cannoneWyver, sparo, sparo, ricarica)
+    const baseTier = new Array(parata, cannoneWyver, sparoA, sparoB, ricarica)
     writeTierToFile(weaponName, "BaseTier.json", baseTier)
     console.log(baseTier.toString())
 }
